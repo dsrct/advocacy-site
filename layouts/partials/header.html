@@ -1,0 +1,17 @@
+{{ with resources.Get "images/logo.svg" }}
+<header class="global-header">
+  <a class="site-title" href="/" style="background-image: url({{ .RelPermalink }});">
+    The
+    DSRCT
+    Initiative
+  </a>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/what-is-dsrct">What is DSRCT</a>
+    <a href="/patient-journey">Patient Journey</a>
+    <a href="https://www.facebook.com/groups/27473069578" target="_blank">Join</a>
+    <a href="#">Support</a>
+  </nav>
+</header>
+{{ end }}

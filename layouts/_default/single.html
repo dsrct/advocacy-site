@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ with .Resources.Get "hero.jpg" }}
+    <h1 class="main-content-hero" style="background-image: url({{ .RelPermalink }});">
+      {{ end }}
+
+      {{ .Title }}
+
+    </h1>
+
+
+  <article class="main-content-body">{{ .Content }}</article>
+{{ end }}

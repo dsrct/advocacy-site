@@ -1,0 +1,225 @@
+/* Start reset - https://piccalil.li/blog/a-more-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* End reset */
+
+:root {
+  --global-margin: 2rem;
+  --content-background-color: #f5f1e8;
+  --the-blue: #006;
+  --the-yellow: #f7d117;
+}
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -moz-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  text-size-adjust: none;
+}
+
+body {
+  /* background-color: #f8f9fa; */
+  background-color: var(--content-background-color);
+  color: #334155;
+  display: grid;
+  /* flex-flow: row wrap; */
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.3;
+  margin-top: .5em;
+}
+
+h1 { font-size: 4rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2.5rem; }
+h4 { font-size: 2rem; }
+h5 { font-size: 1.5rem; }
+
+@media (width >= 768px) {
+  h1 { font-size: 8rem; }
+  h2 { font-size: 6rem; }
+  h3 { font-size: 4.5rem; }
+  h4 { font-size: 3.5rem; }
+  h5 { font-size: 2.5rem; }
+}
+
+@media (width >= 1024px) {
+  h1 { font-size: 10rem; }
+  h2 { font-size: 5rem; }
+  h3 { font-size: 4rem; }
+  h4 { font-size: 4rem; }
+  h5 { font-size: 3rem; }
+}
+
+.global-header,
+.global-footer {
+  background-color: var(--the-yellow);
+  border: var(--global-margin) solid var(--the-yellow);
+
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 50%;
+    font-size: 14px;
+    gap: 1rem;
+    justify-content: end;
+    margin-block-start: 2rem;
+    margin-inline-start: auto;
+    padding-block: 1rem;
+    text-transform: uppercase;
+
+    a {
+      border-top: 1px solid #000066;
+      color: #000066;
+      padding-block-start: 1rem;
+      text-decoration: none;
+    }
+  }
+}
+
+.global-header {
+  /* display: flex; */
+  flex-flow: row wrap;
+  flex: 0 0 20%;
+
+  .site-title {
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000066;
+    display: block;
+    flex: 1 1 100%;
+    font-family: "Inter", sans-serif;
+    font-family: "Lora", serif;
+    font-size: 5rem;
+    line-height: 1;
+    text-align: right;
+    text-decoration: none;
+    white-space: pre-line;
+  }
+
+  nav {
+    position: sticky;
+
+  }
+}
+
+.main-content {
+  flex: 0 0 80%;
+}
+
+.main-content-hero {
+  align-items: end;
+  aspect-ratio: 16 / 9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--content-background-color);
+  display: flex;
+  line-height: 1;
+  margin: 0;
+  max-height: 50vh;
+  min-width: 100vw;
+  padding: 0 var(--global-margin) var(--global-margin);
+  text-shadow: 1px 1px var(--the-blue);
+}
+
+.main-content-body {
+  padding: var(--global-margin);
+
+  ol li a,
+  ul li a {
+    word-break: break-word;
+  }
+}
+
+.global-footer {
+  background-color: #F7D117;
+  flex: 0 0 100%;
+}
