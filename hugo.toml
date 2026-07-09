@@ -1,3 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://dsrct-initiative.org/'
 locale = 'en-us'
 title = 'The DSRCT Initiative'
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
