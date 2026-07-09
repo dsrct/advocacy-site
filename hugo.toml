@@ -1,4 +1,4 @@
-baseURL = 'https://dsrct-initiative.org/'
+baseURL = 'https://dsrct.github.io/advocacy-site/'
 locale = 'en-us'
 title = 'The DSRCT Initiative'
 [caches]
