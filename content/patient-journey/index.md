@@ -1,7 +1,8 @@
 +++
 date = '2026-06-28T01:07:54-04:00'
-draft = true
+draft = false
 title = 'Understanding Your DSRCT Journey'
+heroCredit = 'Photo by <a href="https://unsplash.com/@vladbagacian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vlad Bagacian</a> on <a href="https://unsplash.com/photos/woman-sitting-on-grey-cliff-d1eaoAabeXs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 +++
 
 # Understanding Your DSRCT Journey

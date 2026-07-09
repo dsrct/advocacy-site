@@ -1,6 +1,6 @@
 +++
 date = '2026-06-28T01:07:54-04:00'
-draft = true
+draft = false
 title = 'Glossary'
 photoCredit = 'Photo by <a href="https://unsplash.com/@joshua_hoehne?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Hoehne</a> on <a href="https://unsplash.com/photos/white-printer-paper-with-black-text-1UDjq8s8cy0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 +++
